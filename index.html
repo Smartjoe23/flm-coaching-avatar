@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>FLM Coaching Avatar</title>
@@ -7,47 +7,56 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #f4f4f4;
-      padding: 20px;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
     h1 {
-      color: #333;
-    }
-    .open-btn {
-      display: inline-block;
-      background-color: #0078d7;
-      color: white;
-      padding: 12px 20px;
-      font-size: 16px;
-      font-weight: bold;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-bottom: 20px;
-    }
-    .open-btn:hover {
-      background-color: #005a9e;
+      margin: 20px 0;
     }
     iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 500px;
+      width: 90%;
+      height: 600px;
       border: none;
       border-radius: 12px;
-      box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #0078d7;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .btn:hover {
+      background-color: #005a9e;
     }
   </style>
 </head>
 <body>
 
   <h1>FLM Coaching Avatar</h1>
-  <a class="open-btn" href="https://smartjoe23.github.io/flm-coaching-avatar/" target="_blank">
+
+  <!-- IFRAME для отображения аватара внутри страницы -->
+  <iframe
+    src="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc1ZTBhODdiN2ZkOTRmMDk4MWZmMzk4YjU5M2RkNDdmXzQ1NTcwL3ByZXZpZXdfdGFsa180LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjI0N2E2Y2NlNWQ4YzQ1YWRhMzQ2ZjI0MTI0NGQ0ZTBiIiwidXNlcm5hbWUiOiJjZTQ1OTZmMmMyYmM0ZGI2YmEyOTIwMGJlZTEyOWE3YSJ9&inIFrame=1"
+    allow="microphone"
+    allowfullscreen
+  ></iframe>
+
+  <br>
+
+  <!-- Кнопка для открытия в новой вкладке с голосом -->
+  <a
+    class="btn"
+    href="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc1ZTBhODdiN2ZkOTRmMDk4MWZmMzk4YjU5M2RkNDdmXzQ1NTcwL3ByZXZpZXdfdGFsa180LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjI0N2E2Y2NlNWQ4YzQ1YWRhMzQ2ZjI0MTI0NGQ0ZTBiIiwidXNlcm5hbWUiOiJjZTQ1OTZmMmMyYmM0ZGI2YmEyOTIwMGJlZTEyOWE3YSJ9"
+    target="_blank"
+  >
     🎤 Открыть с голосом (новая вкладка)
   </a>
-
-  <iframe 
-    src="https://smartjoe23.github.io/flm-coaching-avatar/" 
-    title="FLM Coaching Avatar (preview)">
-  </iframe>
 
 </body>
 </html>
