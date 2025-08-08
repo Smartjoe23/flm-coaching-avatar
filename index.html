@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FLM Coaching Avatar</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
+    body { margin: 0; font-family: Arial, sans-serif; background:#fff; }
+    header { padding: 20px 24px; text-align: center; }
+    h1 { margin: 0; color:#114fb2; font-size: 28px; }
+    .wrap { padding: 12px 24px 24px; display: flex; justify-content: center; }
     iframe {
       width: 100%;
-      max-width: 800px;
-      height: 600px;
-      border: none;
+      max-width: 1100px;
+      height: 720px;        /* можно 820 если низ обрезается */
+      border: 0;
       border-radius: 12px;
-      margin-top: 20px;
+      background: #000;
     }
   </style>
 </head>
 <body>
-  <h1>FLM Coaching Avatar</h1>
+  <header>
+    <h1>FLM Coaching Avatar</h1>
+  </header>
 
-  <iframe
-    src="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJb
+  <!-- ЧИСТЫЙ EMBED ОТ HEYGEN -->
+  <div class="wrap">
+    <iframe
+      title="HeyGen FLM Coaching Avatar"
+      src="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc1ZTBhODdiN2ZkOTRmMDk4MWZmMzk4YjU5M2RkNDdmXzQ1NTcwL3ByZXZpZXdfdGFsa180LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjI0N2E2Y2NlNWQ4YzQ1YWRhMzQ2ZjI0MTI0NGQ0ZTBiIiwidXNlcm5hbWUiOiJjZTQ1OTZmMmMyYmM0ZGI2YmEyOTIwMGJlZTEyOWE3YSJ9&inIFrame=1"
+      allow="microphone; camera; autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+</body>
+</html>
