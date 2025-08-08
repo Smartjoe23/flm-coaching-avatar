@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FLM Coaching Avatar</title>
+  <meta charset="UTF-8">
+  <title>Открыть с голосом</title>
   <style>
-    :root { --bg:#f5f7fb; --card:#fff; --text:#0f172a; --brand:#1f6feb; }
-    * { box-sizing: border-box; }
     body {
-      margin: 0; font-family: Arial, sans-serif; color: var(--text); background: var(--bg);
-      display: grid; place-items: center; min-height: 100vh; padding: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
-    .card {
-      width: 100%; max-width: 1100px; background: var(--card); border-radius: 14px;
-      box-shadow: 0 10px 30px rgba(2,6,23,.06); padding: 18px; text-align: center;
+    a.button {
+      display: inline-block;
+      background-color: #0078d7;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
     }
-    h1 { margin: 6px 0 14px; font-size: 22px; }
-    .actions { margin: 10px 0 14px; }
-    .btn {
-      display: inline-block; padding: 10px 14px; border-radius: 10px; text-decoration: none;
-      background: var(--brand); color: #fff; font-weight: 600;
+    a.button:hover {
+      background-color: #005ea6;
     }
-    iframe {
-      width: 100%; height: 720px; border: 0; border-radius: 12px;
-      box-shadow: 0 6px 18px rgba(0,0,0,.08); background:#000;
-    }
-    .hint { margin-top: 10px; font-size: 13px; color:#475569; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>FLM Coaching Avatar</h1>
-
-    <div class="actions">
-      <!-- запасной путь: всегда откроется с голосом в новой вкладке -->
-      <a class="btn" target="_blank" rel="noopener"
-         href="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc1ZTBhODdiN2ZkOTRmMDk4MWZmMzk4YjU5M2RkNDdmXzQ1NTcwL3ByZXZpZXdfdGFsa180LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjI0N2E2Y2NlNWQ4YzQ1YWRhMzQ2ZjI0MTI0NGQ0ZTBiIiwidXNlcm5hbWUiOiJjZTQ1OTZmMmMyYmM0ZGI2YmEyOTIwMGJlZTEyOWE3YSJ9">
-        🎤 Открыть с голосом (новая вкладка)
-      </a>
-    </div>
-
-    <!-- основной вариант: пробуем голос прямо внутри страницы -->
-    <iframe
-      title="HeyGen FLM Coaching Avatar"
-      src="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc1ZTBhODdiN2ZkOTRmMDk4MWZmMzk4YjU5M2RkNDdmXzQ1NTcwL3ByZXZpZXdfdGFsa180LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjI0N2E2Y2NlNWQ4YzQ1YWRhMzQ2ZjI0MTI0NGQ0ZTBiIiwidXNlcm5hbWUiOiJjZTQ1OTZmMmMyYmM0ZGI2YmEyOTIwMGJlZTEyOWE3YSJ9&inIFrame=1"
-      allow="microphone; camera; autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      referrerpolicy="strict-origin-when-cross-origin">
-    </iframe>
-
-    <div class="hint">Если голос не слышно внутри страницы — используйте кнопку выше (откроется с микрофоном).</div>
-  </div>
+  <a class="button" href="https://labs.heygen.com/guest/streaming-embed?share=eyJxdWFsaXR5IjoiaGlnaCIsImF2YXRhck5hbWUiOiJBbm5fVGhlcmFwaXN0X3B1YmxpYyIsInByZXZpZXdJbWciOiJodHRwczovL2ZpbGVzMi5oZXlnZW4uYWkvYXZhdGFyL3YzLzc1ZTBhODdiN2ZkOTRmMDk4MWZmMzk4YjU5M2RkNDdmXzQ1NTcwL3ByZXZpZXdfdGFsa180LndlYnAiLCJuZWVkUmVtb3ZlQmFja2dyb3VuZCI6ZmFsc2UsImtub3dsZWRnZUJhc2VJZCI6IjI0N2E2Y2NlNWQ4YzQ1YWRhMzQ2ZjI0MTI0NGQ0ZTBiIiwidXNlcm5hbWUiOiJjZTQ1OTZmMmMyYmM0ZGI2YmEyOTIwMGJlZTEyOWE3YSJ9" 
+     target="_blank">
+    🎤 Открыть с голосом (новая вкладка)
+  </a>
 </body>
 </html>
